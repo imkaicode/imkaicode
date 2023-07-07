@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs at China time 00:00:00
-    - cron: "27 16 * * *"
+    - cron: "27 2 * * *"
 
 jobs:
   update-readme:
