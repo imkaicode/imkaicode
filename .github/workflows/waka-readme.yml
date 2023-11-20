@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: imkaics/waka-readme@master
         with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} # optional if on profile readme
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           SHOW_TITLE: true
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
