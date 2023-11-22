@@ -14,12 +14,30 @@ jobs:
     name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
+      - name: Set Random Time
+        id: random-time
+        run: echo "::set-output name=time::$(shuf -i 10-14 -n 1):$(shuf -i 0-59 -n 1)"
+
+      - name: Wait Until Random Time
+        id: wait-time
+        run: |
+          current_hour=$(TZ='Asia/Shanghai' date +%H)
+          current_minute=$(date +%M)
+          random_hour=$(cut -d ":" -f 1 <<< "${{ steps.random-time.outputs.time }}")
+          random_minute=$(cut -d ":" -f 2 <<< "${{ steps.random-time.outputs.time }}")
+
+          while [[ $current_hour -lt $random_hour || ($current_hour -eq $random_hour && $current_minute -lt $random_minute) ]]; do
+            sleep 10s
+            current_hour=$(TZ='Asia/Shanghai' date +%H)
+            current_minute=$(date +%M)
+          done
+
       - uses: imkaics/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           SHOW_TITLE: true
           BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
-          CODE_LANG: python # 基于语言语法的突出显示文本
+          # CODE_LANG: python # 基于语言语法的突出显示文本
           TIME_RANGE: all_time
           SHOW_TIME: true
           SHOW_MASKED_TIME: true
