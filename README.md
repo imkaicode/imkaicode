@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 ![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=imkaics&show_icons=true)
 <!--START_SECTION:waka-->
-
+[![wakatime](https://wakatime.com/badge/user/60f237fa-d889-46fa-961c-4cdcd596b55c.svg)](https://wakatime.com/@60f237fa-d889-46fa-961c-4cdcd596b55c)
 ```txt
 From: 15 July 2022 - To: 15 November 2023
 
