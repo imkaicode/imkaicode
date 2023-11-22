@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 [![wakatime](https://wakatime.com/badge/user/60f237fa-d889-46fa-961c-4cdcd596b55c.svg)](https://wakatime.com/@60f237fa-d889-46fa-961c-4cdcd596b55c)
 <!--START_SECTION:waka-->
 
-```python
+```txt
 From: 15 July 2022 - To: 21 November 2023
 
 Total Time: 289 hrs 37 mins
