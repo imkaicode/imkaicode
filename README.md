@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 ![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=imkaics&show_icons=true)
 <!-- [![wakatime](https://wakatime.com/share/@60f237fa-d889-46fa-961c-4cdcd596b55c/095a859c-d571-42b5-b3d2-dbb7c307cf2f.svg)] -->
-[![wakatime](https://wakatime.com/badge/user/60f237fa-d889-46fa-961c-4cdcd596b55c.svg)](https://wakatime.com/@60f237fa-d889-46fa-961c-4cdcd596b55c)
+📊**My Code Time**[![wakatime](https://wakatime.com/badge/user/60f237fa-d889-46fa-961c-4cdcd596b55c.svg)](https://wakatime.com/@60f237fa-d889-46fa-961c-4cdcd596b55c)
 <!--START_SECTION:waka-->
 
 ```txt
