@@ -32,7 +32,7 @@ jobs:
             current_minute=$(date +%M)
           done
 
-      - uses: imkaics/waka-readme@master
+      - uses: imkaicode/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           # SHOW_TITLE: true
